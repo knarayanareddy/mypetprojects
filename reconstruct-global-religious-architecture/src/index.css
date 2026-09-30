@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #ff5a2e;
+  --bone: #ece6d8;
+  --ink: #05070a;
+  --display: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Times New Roman", serif;
+  --sans: ui-sans-serif, -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --jp: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK SC", "Songti SC", "STSong", "SimSun", var(--display);
+}
+
+@theme {
+  --color-bone: #ece6d8;
+  --color-ink: #05070a;
+  --font-display: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+html {
+  background: var(--ink);
+  color: var(--bone);
+  scroll-behavior: auto;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: radial-gradient(120% 90% at 50% 100%, #1a1214 0%, #06080c 60%, #020304 100%);
+  color: var(--bone);
+  overflow-x: hidden;
+}
+::selection {
+  background: var(--accent);
+  color: #000;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 230, 216, 0.22);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.canvas-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(120% 90% at 50% 100%, #1a1214 0%, #06080c 70%);
+}
+.canvas-wrap canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.font-display {
+  font-family: var(--display);
+}
+.font-mono-x {
+  font-family: var(--mono);
+}
+.vertical {
+  writing-mode: vertical-rl;
+}
+.jp {
+  font-family: var(--jp);
+}
+.sr-only-x {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+.text-shadow {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.75), 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* intro reveal (time-based, on load) */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 55%, 0);
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+.rise {
+  opacity: 0;
+}
+[data-ready="true"] .rise {
+  animation: rise 1.6s cubic-bezier(0.2, 0.7, 0.1, 1) forwards;
+  animation-delay: var(--d, 0s);
+}
+
+@keyframes cue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.cue-line {
+  animation: cue 2.4s cubic-bezier(0.7, 0, 0.2, 1) infinite;
+}
+
+/* custom cursor */
+html.has-cursor,
+html.has-cursor * {
+  cursor: none !important;
+}
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  pointer-events: none;
+  border-radius: 999px;
+  will-change: transform;
+}
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: var(--accent);
+}
+.cursor-ring {
+  width: 38px;
+  height: 38px;
+  margin: -19px 0 0 -19px;
+  border: 1px solid rgba(236, 230, 216, 0.55);
+  transition: width 0.35s cubic-bezier(0.2, 0.7, 0.1, 1), height 0.35s cubic-bezier(0.2, 0.7, 0.1, 1),
+    margin 0.35s cubic-bezier(0.2, 0.7, 0.1, 1), background 0.3s, border-color 0.3s;
+}
+.cursor-ring.is-hover {
+  width: 70px;
+  height: 70px;
+  margin: -35px 0 0 -35px;
+  background: rgba(236, 230, 216, 0.08);
+  border-color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+.nav-link:hover::after,
+.nav-link[aria-current="true"]::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-ready="true"] .rise {
+    animation-duration: 0.01s;
+    animation-delay: 0s;
+  }
+  .cue-line {
+    animation: none;
+    transform: scaleY(1);
+  }
+}
