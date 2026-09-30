@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4ecd8;
+  --desk: #231b16;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --display: "Instrument Serif", "Newsreader", Georgia, serif;
+  --hand: "Caveat", "Segoe Print", cursive;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--desk);
+  color: #f3e8d2;
+  font-family: var(--serif);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.desk {
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(255, 214, 150, 0.16), transparent 62%),
+    repeating-linear-gradient(92deg, rgba(255, 255, 255, 0.018) 0 2px, rgba(0, 0, 0, 0.03) 2px 5px),
+    linear-gradient(180deg, #33261d 0%, #221913 60%, #17110d 100%);
+}
+
+.paper {
+  background-color: var(--paper);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .18 0 0 0 .2 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, 0.45), transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(170, 130, 70, 0.18), transparent 60%);
+}
+
+.kick {
+  font-family: var(--hand);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.ttl {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 1.02;
+  margin: 4px 0 8px;
+  letter-spacing: -0.005em;
+}
+
+.bodytxt {
+  font-family: var(--serif);
+  font-size: 14.6px;
+  line-height: 1.52;
+  margin: 0;
+  color: #3a2f26;
+  text-wrap: pretty;
+}
+
+.dropcap::first-letter {
+  font-family: var(--display);
+  float: left;
+  font-size: 3.1em;
+  line-height: 0.8;
+  padding: 4px 6px 0 0;
+  color: var(--cap, #7a3b2a);
+}
+
+.folio {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 14px;
+  color: #6e5d4a;
+}
+
+.cloth {
+  background-image:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.13) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at 35% 25%, rgba(255, 255, 255, 0.16), transparent 65%);
+}
+
+.gold {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45), 0 0 1px rgba(255, 240, 190, 0.5);
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 230, 180, 0.25);
+  border-radius: 3px;
+}
+
+input[type="range"].seek {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 235, 200, 0.22);
+  outline: none;
+}
+input[type="range"].seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #e5c27a;
+  border: 2px solid #3a2a1a;
+  cursor: pointer;
+}
+input[type="range"].seek::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e5c27a;
+  border: 2px solid #3a2a1a;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
