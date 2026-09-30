@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #0b1220;
+  overflow: hidden;
+}
+
+/* timeline slider: transparent track, round thumb that follows the ink colour */
+input.tl {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  margin: 0;
+}
+input.tl::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 24px;
+}
+input.tl::-moz-range-track {
+  background: transparent;
+  height: 24px;
+}
+input.tl::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+  border-radius: 999px;
+  background: currentColor;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+input.tl::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: currentColor;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
