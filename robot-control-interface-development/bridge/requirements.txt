@@ -1,0 +1,9 @@
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2
+numpy
+pillow
+# For real models install LeRobot (plus the extra for your policy), e.g.:
+#   pip install -e ".[feetech]"   # inside the lerobot checkout
+#   pip install -e ".[smolvla]"   # SmolVLA
+# torch is installed with LeRobot.
