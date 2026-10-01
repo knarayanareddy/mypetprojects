@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4ecd7;
+  --paper-2: #efe5cb;
+  --card: #fbf7ea;
+  --ink: #1f3a8a;
+  --text: #1c2434;
+  --muted: #6d6652;
+  --rule: #d9ceae;
+  --verm: #c0392b;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper2: var(--paper-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-rule: var(--rule);
+  --color-verm: var(--verm);
+  --color-muted: var(--muted);
+  --font-serif: Georgia, "Iowan Old Style", "Noto Serif", "Source Han Serif SC", serif;
+}
+
+body {
+  background: var(--paper);
+  color: var(--text);
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: #fff;
+  border: 1px solid var(--ink);
+  padding: 0.6rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-primary:hover:not(:disabled) {
+  background: #16296a;
+}
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-ghost:hover:not(:disabled) {
+  background: var(--ink);
+  color: #fff;
+}
+.btn-ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.paper-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+}
+.kicker {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--verm);
+}
+.field {
+  width: 100%;
+  background: #fffdf5;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.9rem;
+}
+.field:focus {
+  outline: 2px solid var(--ink);
+  outline-offset: -1px;
+}
