@@ -1,0 +1,184 @@
+{
+  "evidence": [
+    {
+      "id": "E1",
+      "signal": "Notion is too complex for casual users",
+      "platform": "HN",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H1"
+      ],
+      "dims": [
+        "pain_intensity",
+        "current_alternatives"
+      ],
+      "claim": "Long-time user quit over complexity",
+      "quote": "I finally gave up on Notion — I spent more time structuring than writing.",
+      "url": "https://news.ycombinator.com/item?id=00000001",
+      "date": "2025-11"
+    },
+    {
+      "id": "E3",
+      "signal": "Notion is too complex for casual users",
+      "platform": "App Store",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H1"
+      ],
+      "dims": [
+        "pain_intensity",
+        "prevalence"
+      ],
+      "claim": "1-star reviews repeat 'overwhelming'",
+      "quote": "Way too many concepts. I just wanted shared docs.",
+      "url": "https://apps.apple.com/app/id0000000",
+      "date": "2025-12"
+    },
+    {
+      "id": "E4",
+      "signal": "Complaints come from solo users, not paying teams",
+      "platform": "HN",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H2",
+        "H3"
+      ],
+      "dims": [
+        "willingness_to_pay",
+        "reachability"
+      ],
+      "claim": "Team admin defends flexibility",
+      "quote": "Our 12-person team runs everything on it. The flexibility IS the product.",
+      "url": "https://news.ycombinator.com/item?id=00000002",
+      "date": "2025-10"
+    },
+    {
+      "id": "E7",
+      "signal": "Notion is too complex for casual users",
+      "platform": "Google Trends",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H1"
+      ],
+      "dims": [
+        "prevalence"
+      ],
+      "claim": "'notion too complicated' trending up",
+      "quote": "Rising query, +40% YoY (direction only, zero-login)",
+      "url": "https://trends.google.com/trends/explore?q=notion%20too%20complicated",
+      "date": "2026-01"
+    },
+    {
+      "id": "E9",
+      "signal": "Complaints come from solo users, not paying teams",
+      "platform": "App Store",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H2"
+      ],
+      "dims": [
+        "willingness_to_pay",
+        "reachability"
+      ],
+      "claim": "Complaints skew to individual plans",
+      "quote": "Loved it solo until my brain melted. Never got my team on it.",
+      "url": "https://apps.apple.com/app/id0000000",
+      "date": "2025-09"
+    },
+    {
+      "id": "E10",
+      "signal": "Collaboration software is growing about 13% a year",
+      "platform": "Statista",
+      "source_type": "analyst",
+      "origin": "secondary",
+      "claims": [
+        "H4"
+      ],
+      "dims": [
+        "market_size"
+      ],
+      "claim": "Collaboration software growing ~13% CAGR",
+      "quote": "Market projected to grow at double-digit CAGR through 2028.",
+      "url": "https://www.statista.com/outlook/collaboration",
+      "date": "2025-06"
+    },
+    {
+      "id": "E11",
+      "signal": "Simpler rivals lead with free tiers",
+      "platform": "Product Hunt",
+      "source_type": "hard",
+      "origin": "primary",
+      "claims": [
+        "H3",
+        "H4"
+      ],
+      "dims": [
+        "willingness_to_pay",
+        "differentiation_wedge"
+      ],
+      "claim": "Simpler rivals lead with free tiers",
+      "quote": "Free for teams up to 10 — pricing page",
+      "url": "https://www.producthunt.com/products/slite",
+      "date": "2025-08"
+    },
+    {
+      "id": "E13",
+      "signal": "Simpler rivals lead with free tiers",
+      "platform": "Medium",
+      "source_type": "behavioral",
+      "origin": "secondary",
+      "claims": [
+        "H4"
+      ],
+      "dims": [
+        "differentiation_wedge",
+        "market_size"
+      ],
+      "claim": "A dozen 'simpler Notion' products already shipped",
+      "quote": "Comparison: 12 Notion alternatives that promise simplicity.",
+      "url": "https://medium.com/example/12-notion-alternatives",
+      "date": "2025-07"
+    },
+    {
+      "id": "E14",
+      "signal": "Templates and team habits are the switching cost",
+      "platform": "HN",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H4"
+      ],
+      "dims": [
+        "differentiation_wedge",
+        "current_alternatives"
+      ],
+      "claim": "Templates are the switching cost",
+      "quote": "I stay for the 400 templates my team already uses.",
+      "url": "https://news.ycombinator.com/item?id=00000003",
+      "date": "2025-12"
+    },
+    {
+      "id": "E15",
+      "signal": "Agencies want docs-first tools without databases",
+      "platform": "Medium",
+      "source_type": "behavioral",
+      "origin": "primary",
+      "claims": [
+        "H2"
+      ],
+      "dims": [
+        "differentiation_wedge",
+        "reachability"
+      ],
+      "claim": "Agencies want docs-first, no databases",
+      "quote": "We're an agency. We need docs, not a database course.",
+      "url": "https://medium.com/example/agency-tools",
+      "date": "2026-01"
+    }
+  ]
+}

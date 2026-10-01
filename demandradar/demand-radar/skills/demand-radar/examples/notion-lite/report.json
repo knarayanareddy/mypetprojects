@@ -1,0 +1,252 @@
+{
+  "lang": "en",
+  "question": "A simpler Notion",
+  "one_liner": "A stripped-down Notion alternative for 5-20 person remote teams, priced per seat",
+  "confidence": "medium",
+  "verdict_sub": "**The pain is real — but the people complaining aren't the buyers.**",
+  "verdict_sub2": "\"Notion is too complex\" shows up across HN, App Store reviews and comparison blogs — but nearly every complaint traces to free individual users, while paying teams call the flexibility the reason they stay. Real demand exists one segment over: docs-first tools for non-technical small teams. Aim there, not at \"simpler Notion.\"",
+  "demand_tags": [
+    {
+      "text": "Real demand",
+      "kind": "good"
+    },
+    {
+      "text": "Red ocean · crowded",
+      "kind": "bad"
+    },
+    {
+      "text": "Niche wedge only",
+      "kind": "warn"
+    }
+  ],
+  "claims": [
+    {
+      "id": "H1",
+      "title": "Pain exists: Notion overwhelms casual users",
+      "status": "supported",
+      "note": "Verified across 3 independent platforms — complexity complaints are loud and recurring."
+    },
+    {
+      "id": "H2",
+      "title": "ICP match: small remote teams have this pain",
+      "status": "refuted",
+      "note": "Complainers are free individual users; team admins praise the flexibility."
+    },
+    {
+      "id": "H3",
+      "title": "They'd pay $15/seat for a simpler tool",
+      "status": "refuted",
+      "note": "No payment evidence at that price; simpler rivals win on free tiers."
+    },
+    {
+      "id": "H4",
+      "title": "Per-seat SaaS is the right model here",
+      "status": "uncertain",
+      "note": "Model works in the category, but only with a differentiated wedge."
+    }
+  ],
+  "go_criteria": [
+    {
+      "criterion": "≥3 independent sources show the same willingness-to-pay signal",
+      "met": "no",
+      "note": "Only opinion-grade quotes found; zero payment behavior."
+    },
+    {
+      "criterion": "Complaint volume concentrated in the target ICP",
+      "met": "no",
+      "note": "Complaints skew to free individual users, not teams."
+    }
+  ],
+  "why": [
+    {
+      "kind": "+",
+      "title": "The complexity pain is real",
+      "body": "\"Too complex / gave up\" recurs on HN, App Store (84,953 ratings) and comparison blogs — triangulated at 3 sources.",
+      "evidence_ids": [
+        "E1",
+        "E3",
+        "E7"
+      ]
+    },
+    {
+      "kind": "-",
+      "title": "Buyer mismatch · lethal",
+      "body": "Those who complain don't hold the budget; team admins who pay praise the flexibility that casual users hate.",
+      "evidence_ids": [
+        "E4",
+        "E9"
+      ]
+    },
+    {
+      "kind": "-",
+      "title": "No payment evidence at $15/seat",
+      "body": "Every willingness-to-pay quote is opinion-grade; competitors compete on generous free tiers.",
+      "evidence_ids": [
+        "E11"
+      ]
+    },
+    {
+      "kind": "-",
+      "title": "Red ocean, commoditized features",
+      "body": "Slite, Craft, Coda and a dozen others already sell \"simpler docs\"; the feature set is table stakes.",
+      "evidence_ids": [
+        "E13"
+      ]
+    },
+    {
+      "kind": "~",
+      "title": "A wedge exists one segment over",
+      "body": "Non-technical teams (agencies, ops) want docs-first with zero database concepts — underserved per review mining.",
+      "evidence_ids": [
+        "E15"
+      ]
+    }
+  ],
+  "one_thing": {
+    "title": "Pre-sell to non-technical teams before writing code",
+    "detail": "Run a landing-page pre-sale aimed at agencies/ops teams at $10/seat with $100 of ads; kill the idea if paid sign-ups stay under 2%.",
+    "window": "2 weeks · $100"
+  },
+  "actions": [
+    {
+      "title": "Re-target the ICP to non-technical small teams",
+      "priority": "high",
+      "detail": "Re-run validation on agencies/ops teams who never adopted Notion; 1 week of interview mining on their current stack.",
+      "fixes": "current_alternatives"
+    },
+    {
+      "title": "Test pricing against free tiers, not against Notion",
+      "priority": "medium",
+      "detail": "Benchmark Slite/Craft free plans; find the jobs a free tier can't do and price only those. Decide in 1 week.",
+      "fixes": "willingness_to_pay"
+    }
+  ],
+  "do_not": [
+    {
+      "title": "Don't build \"simpler Notion\" for Notion users",
+      "reason": "The complaining segment doesn't pay; the paying segment doesn't want simpler."
+    },
+    {
+      "title": "Don't compete on feature count",
+      "reason": "Docs features are commoditized across a dozen funded rivals."
+    }
+  ],
+  "risks": [
+    {
+      "type": "Unit economics",
+      "severity": "high",
+      "title": "Free tiers cap the price ceiling",
+      "body": "Rivals' free plans cover the casual segment's whole job; paid conversion in this category runs low single digits, which can't fund paid acquisition.",
+      "evidence_ids": [
+        "E11",
+        "E13"
+      ]
+    },
+    {
+      "type": "Platform dependency",
+      "severity": "medium",
+      "title": "Notion's template ecosystem is the moat you'd fight",
+      "body": "Switching cost isn't features — it's thousands of community templates and integrations a newcomer can't match on day one.",
+      "evidence_ids": [
+        "E14"
+      ]
+    }
+  ],
+  "voices": [
+    {
+      "domain": "Community · Forums (HN)",
+      "lean": "mix",
+      "summary": "Loud complexity complaints, but the same threads defend Notion's power for teams — the split maps exactly to free vs paying users.",
+      "evidence_ids": [
+        "E1",
+        "E4"
+      ]
+    },
+    {
+      "domain": "App reviews (App Store)",
+      "lean": "for",
+      "summary": "1-2 star reviews repeat \"overwhelming / too many concepts\"; most are individual plans.",
+      "evidence_ids": [
+        "E3",
+        "E9"
+      ]
+    },
+    {
+      "domain": "Analyst reports",
+      "lean": "mix",
+      "summary": "Collaboration-software market is growing, but no analyst sizes a \"simpler docs\" sub-segment.",
+      "evidence_ids": [
+        "E10"
+      ]
+    },
+    {
+      "domain": "Search demand",
+      "lean": "for",
+      "summary": "\"notion alternative simple\" and \"notion too complicated\" both trend up year over year.",
+      "evidence_ids": [
+        "E7"
+      ]
+    }
+  ],
+  "contradictions": "Top-down and bottom-up agree the market is big and growing — but they split on *who* hurts: analysts talk team seats, while community complaints come from free individuals. That mismatch is the finding: the demand is real, the assumed buyer is wrong.",
+  "red_team": "The lethal blow: **the complainers and the buyers are two different people.** Red team also killed the $15/seat claim (zero payment evidence, free-tier competition) — together these pulled the verdict from Conditional (55) to Pivot (40). It could NOT refute the pain itself, which survived at 3-source confidence.",
+  "competitors": [
+    {
+      "name": "Notion",
+      "model": "Freemium + per-seat",
+      "price": "$10/seat/mo",
+      "rating": 4.7,
+      "rating_count": 84953,
+      "top_complaint": "Overwhelming for casual users",
+      "url": "https://notion.so"
+    },
+    {
+      "name": "Slite",
+      "model": "Freemium + per-seat",
+      "price": "$8/seat/mo",
+      "rating": 4.6,
+      "rating_count": 2100,
+      "top_complaint": "Shallow integrations",
+      "url": "https://slite.com"
+    },
+    {
+      "name": "Craft",
+      "model": "Freemium + subscription",
+      "price": "$8/mo",
+      "rating": 4.7,
+      "rating_count": 12400,
+      "top_complaint": "Weak multi-user collaboration",
+      "url": "https://craft.do"
+    }
+  ],
+  "alternatives": [
+    {
+      "current": "Notion with a strict \"3 blocks only\" team convention",
+      "gap": "Discipline decays; new hires break it — a tool-level constraint is the gap"
+    },
+    {
+      "current": "Google Docs + Drive folders",
+      "gap": "No structure at all; teams outgrow it at ~10 people"
+    }
+  ],
+  "not_verified": [
+    "SYNTHETIC EXAMPLE: every quote and URL here is a placeholder, nothing above was actually researched.",
+    "Market size for the \"docs-first, non-technical teams\" sub-segment — no analyst covers it (needs paid data).",
+    "Actual churn reasons of paying Notion teams — only anecdotes, no cohort data.",
+    "G2/Capterra review mining — excluded in the zero-login MVP."
+  ],
+  "method": {
+    "agents": 10,
+    "evidence_count": 38,
+    "signals_verified": 9,
+    "rounds": 2,
+    "sources": [
+      "Hacker News",
+      "App Store reviews",
+      "Product Hunt",
+      "comparison blogs",
+      "analyst summaries",
+      "search trends"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "demand-radar",
+  "description": "Validate whether a product demand is real before you build it: falsifiable hypothesis, two evidence pillars, 2-source triangulation, 7-axis scorecard, adversarial red team, answer-first HTML report. Portable fork that also runs on Hermes Agent, Roo Code and any Agent Skills host.",
+  "version": "1.1.0",
+  "author": { "name": "Original: Leif Diao (lemomo-ai). Portable adaptation: contributors" },
+  "license": "CC-BY-NC-4.0",
+  "homepage": "https://github.com/lemomo-ai/demand-radar",
+  "repository": "https://github.com/lemomo-ai/demand-radar",
+  "keywords": ["demand-validation", "market-research", "product-market-fit", "idea-validation", "agent-skills", "hermes", "roo-code", "claude-code"]
+}

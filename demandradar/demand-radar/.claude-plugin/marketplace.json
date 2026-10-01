@@ -1,0 +1,11 @@
+{
+  "name": "demand-radar-marketplace",
+  "owner": { "name": "demand-radar contributors" },
+  "plugins": [
+    {
+      "name": "demand-radar",
+      "source": "./",
+      "description": "Validate whether a demand is real before you build it. Portable adaptation of lemomo-ai/demand-radar."
+    }
+  ]
+}

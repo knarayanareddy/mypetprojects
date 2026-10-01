@@ -1,0 +1,21 @@
+# Optional additions to ~/.hermes/config.yaml for running Demand Radar well.
+# Keys differ slightly across Hermes versions; check `hermes config` / the docs if one is rejected.
+
+delegation:
+  # The skill fans out six collectors and three judges. Hermes' default concurrency is small
+  # (3 in older docs, 10 in newer ones). A batch above the limit returns a tool error, so the
+  # skill batches in groups; raise this only if your provider and hardware can take it.
+  max_concurrent_children: 3
+  # Collectors do many search + fetch calls; give children enough turns.
+  max_iterations: 60
+  # Optional: run collectors/judges on a cheaper or local model so they do not contend with the
+  # orchestrator. On a single local GPU keep concurrency at 1-2 (Mode B behaves the same, just slower).
+  # model: "qwen3-coder"
+  # base_url: "http://localhost:11434/v1"
+  # api_key: "local-key"
+
+# Skills can also be shared through an external directory (read-only discovery), for example
+# one checkout used by several agents. Hermes still writes skill edits to ~/.hermes/skills/.
+# skills:
+#   external_dirs:
+#     - ~/.agents/skills

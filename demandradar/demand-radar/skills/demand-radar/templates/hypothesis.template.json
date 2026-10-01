@@ -1,0 +1,22 @@
+{
+  "idea": "",
+  "icp": "who exactly has the problem, e.g. 5-20 person remote design teams (never 'everyone')",
+  "job": "the job to be done, e.g. avoid file-version conflicts when several people edit together",
+  "current_workaround": "how they cope today, e.g. Notion + a spreadsheet kept in sync by hand",
+  "demand_type": "b2b-saas | consumer-app | physical-ecommerce | content-creator | developer-tool | open-source | general",
+  "market": "global-en | china-zh | bilingual | <region>",
+  "buyer_vs_user": "same person, or: the user is X, the payer is Y",
+  "pricing_assumption": "e.g. $12 / seat / month, or free + paid hosting",
+  "claims": [
+    {"id": "H1", "title": "Pain exists", "statement": "<ICP> repeatedly hits <pain> in <situation>",
+     "go_criterion": ">=2 independent sources quote the same complaint"},
+    {"id": "H2", "title": "ICP match", "statement": "the people in pain are the people you can serve and reach",
+     "go_criterion": "complainer profile matches the ICP"},
+    {"id": "H3", "title": "Payment holds", "statement": "they pay for a fix (not just say they would)",
+     "go_criterion": "similar solutions show real payment: pricing pages, paid reviews, funding, revenue"},
+    {"id": "H4", "title": "Model holds", "statement": "the pricing / channel / form you bet on works",
+     "go_criterion": ">=1 live product with the same model that is growing"}
+  ],
+  "search_languages": ["en"],
+  "known_competitors": []
+}

@@ -1,0 +1,45 @@
+{
+  "idea": "A simpler Notion for small remote teams",
+  "icp": "5-20 person remote teams that tried Notion and found it too heavy",
+  "job": "keep shared docs and light task tracking in one place without learning a database tool",
+  "current_workaround": "Notion with a strict 'few blocks only' convention, or Google Docs + Drive folders",
+  "demand_type": "b2b-saas",
+  "market": "global-en",
+  "buyer_vs_user": "user is any team member; payer is the team lead or ops manager",
+  "pricing_assumption": "$15 / seat / month",
+  "claims": [
+    {
+      "id": "H1",
+      "title": "Pain exists",
+      "statement": "Notion overwhelms casual users, repeatedly",
+      "go_criterion": ">=2 independent platforms quote the same complexity complaint"
+    },
+    {
+      "id": "H2",
+      "title": "ICP match",
+      "statement": "small remote teams are the ones in pain",
+      "go_criterion": "complaint volume concentrates in teams of 5-20, not solo users"
+    },
+    {
+      "id": "H3",
+      "title": "Payment holds",
+      "statement": "they would pay $15/seat for a simpler tool",
+      "go_criterion": ">=3 independent sources show payment behaviour at a similar price"
+    },
+    {
+      "id": "H4",
+      "title": "Model holds",
+      "statement": "per-seat SaaS is the right model",
+      "go_criterion": ">=1 live per-seat rival that is growing"
+    }
+  ],
+  "search_languages": [
+    "en"
+  ],
+  "known_competitors": [
+    "Notion",
+    "Slite",
+    "Craft"
+  ],
+  "_notice": "SYNTHETIC EXAMPLE. Quotes, URLs and numbers are illustrative placeholders so the pipeline can be run end to end. They are NOT real evidence; never cite them."
+}

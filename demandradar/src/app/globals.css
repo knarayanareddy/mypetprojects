@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+/* blueprint grid used behind the hero */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(63, 63, 70, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(63, 63, 70, 0.28) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse at 50% 30%, black 35%, transparent 75%);
+}
+
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

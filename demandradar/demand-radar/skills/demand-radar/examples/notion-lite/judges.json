@@ -1,0 +1,203 @@
+[
+  {
+    "judge": "optimist",
+    "scores": [
+      {
+        "dim": "pain_intensity",
+        "score": 5,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E1",
+          "E3",
+          "E7"
+        ]
+      },
+      {
+        "dim": "prevalence",
+        "score": 4,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E3",
+          "E7"
+        ]
+      },
+      {
+        "dim": "current_alternatives",
+        "score": 3,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E1",
+          "E14"
+        ]
+      },
+      {
+        "dim": "willingness_to_pay",
+        "score": 3,
+        "confidence": "low",
+        "evidence_ids": [
+          "E4",
+          "E9",
+          "E11"
+        ]
+      },
+      {
+        "dim": "market_size",
+        "score": null,
+        "insufficient": true,
+        "note": "only one analyst source; no sub-segment sizing"
+      },
+      {
+        "dim": "differentiation_wedge",
+        "score": 2,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E13",
+          "E15"
+        ]
+      },
+      {
+        "dim": "reachability",
+        "score": 4,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E4",
+          "E15"
+        ]
+      }
+    ]
+  },
+  {
+    "judge": "strict",
+    "scores": [
+      {
+        "dim": "pain_intensity",
+        "score": 4,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E1",
+          "E3",
+          "E7"
+        ]
+      },
+      {
+        "dim": "prevalence",
+        "score": 3,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E3",
+          "E7"
+        ]
+      },
+      {
+        "dim": "current_alternatives",
+        "score": 2,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E1",
+          "E14"
+        ]
+      },
+      {
+        "dim": "willingness_to_pay",
+        "score": 1,
+        "confidence": "low",
+        "evidence_ids": [
+          "E4",
+          "E9",
+          "E11"
+        ]
+      },
+      {
+        "dim": "market_size",
+        "score": null,
+        "insufficient": true,
+        "note": "only one analyst source; no sub-segment sizing"
+      },
+      {
+        "dim": "differentiation_wedge",
+        "score": 1,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E13",
+          "E15"
+        ]
+      },
+      {
+        "dim": "reachability",
+        "score": 4,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E4",
+          "E15"
+        ]
+      }
+    ]
+  },
+  {
+    "judge": "neutral",
+    "scores": [
+      {
+        "dim": "pain_intensity",
+        "score": 4,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E1",
+          "E3",
+          "E7"
+        ]
+      },
+      {
+        "dim": "prevalence",
+        "score": 3,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E3",
+          "E7"
+        ]
+      },
+      {
+        "dim": "current_alternatives",
+        "score": 2,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E1",
+          "E14"
+        ]
+      },
+      {
+        "dim": "willingness_to_pay",
+        "score": 1,
+        "confidence": "low",
+        "evidence_ids": [
+          "E4",
+          "E9",
+          "E11"
+        ]
+      },
+      {
+        "dim": "market_size",
+        "score": null,
+        "insufficient": true,
+        "note": "only one analyst source; no sub-segment sizing"
+      },
+      {
+        "dim": "differentiation_wedge",
+        "score": 1,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E13",
+          "E15"
+        ]
+      },
+      {
+        "dim": "reachability",
+        "score": 4,
+        "confidence": "medium",
+        "evidence_ids": [
+          "E4",
+          "E15"
+        ]
+      }
+    ]
+  }
+]
