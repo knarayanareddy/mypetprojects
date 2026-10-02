@@ -1,4 +1,4 @@
-# dependencies
+# dependencies (unanchored: every project has its own node_modules)
 node_modules/
 
 # build output (anchored to repo root — bare build/ would also match
@@ -6,6 +6,18 @@ node_modules/
 /dist/
 /build/
 /.vite/
+
+# Next.js / framework build output (per-project, so unanchored)
+.next/
+.turbo/
+out/
+
+# python bytecode
+__pycache__/
+*.py[cod]
+
+# TypeScript incremental build state
+*.tsbuildinfo
 
 # agent bus artifacts (aider/pi scratch)
 .aider.chat.history.md

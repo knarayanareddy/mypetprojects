@@ -1,0 +1,3 @@
+# inside your LeRobot environment (python ≥3.10):
+#   pip install -e ".[feetech]"      # from a lerobot checkout, or: pip install "lerobot[feetech]"
+websockets>=12
